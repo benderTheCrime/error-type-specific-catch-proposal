@@ -1,6 +1,6 @@
 # Error-Type Specific Catch Blocks
 #### Author: Joe Groseclose (jgrosecl49@gmail.com) (@benderTheCrime)
-This document aims to outline a proposal for the catching of specific error types in try/catch blocks.
+This document aims to outline a proposal for the catching of specific error types in try/catch/finally blocks.
 
 ## The Problem
 Today, there is not a robust solution for catching errors by type. One must approach handling errors with an "all-or-nothing" strategy, whereby one assumes that all errors are to be treated equally and weighted the same.
@@ -118,8 +118,7 @@ try {
     // "as"
 } catch TypeError as e {
     // Parenthesis & "as"
-} catch (TypeError as e) {
-}
+} catch (TypeError as e) {}
 ```
 
 ### Custom Error Handling
