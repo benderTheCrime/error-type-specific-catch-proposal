@@ -165,6 +165,10 @@ try {
 }
 ```
 
+#### About: SpiderMonkey Implementation
+SpiderMonkey currently supports a non-standard implementation of this proposed feature: [MDN Conditional catch clauses](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/try...catch#Conditional_catch_clauses)
+
+With respect to backward compatibility, I think it would be ideal for SpiderMonkey to support both their non-standard implementation and the syntax outlined in this proposal. The proposed solution is still an improvement to the non-standard implementation, intended for all browsers, and is more expressive. Nevertheless, it is unacceptable to entirely change any implementation of this feature (even in part) on any engine. Supporting both syntaxes in parallel is the ideal solution.
 
 ### Conclusion
 Based on the usefulness of this feature (and the likely use cases), the minimality of the syntax of the change, and the nature of its complete backward compatibility, I believe this to be a necessary addition to the specification.  
